@@ -2,11 +2,24 @@
   "name": "customizable-table",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rollup": "rollup -c"
   },
   "keywords": [],
   "author": "Abinaya Arumugam",
-  "license": "MIT"
+  "license": "MIT",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "react": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.15.9"
+  }
 }
